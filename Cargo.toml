@@ -22,6 +22,11 @@ keywords = ["io", "async", "non-blocking", "futures"]
 categories = ["asynchronous", "network-programming"]
 license = "MIT"
 repository = "https://github.com/tokio-rs/tokio"
+
+[patch.crates-io]
+tokio-reactor = { git = "https://github.com/gatoWololo/tokio-reactor-0.1.12"}
+tokio-threadpool = { git = "https://github.com/gatoWololo/tokio-threadpool-0.1.18" }
+
 [dependencies.bytes]
 version = "0.4"
 optional = true
@@ -70,8 +75,6 @@ version = "0.1.0"
 optional = true
 
 [dependencies.tokio-threadpool]
-git = "https://github.com/gatoWololo/tokio-threadpool-0.1.18"
-#path = "../tokio-threadpool-0.1.18"
 version = "0.1.14"
 optional = true
 
